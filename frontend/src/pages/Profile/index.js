@@ -30,7 +30,7 @@ export default function Profile() {
         headers: { Authorization: ongId }
       })
 
-      setIncidents(incidents.filter(incident => incidents.id !== id));
+      setIncidents(incidents.filter(incident => incident.id !== id));
     } catch(e) {
       alert('Erro ao deletar caso, tente novamente.');
     }
